@@ -1,0 +1,137 @@
+/* Navbar Styles */
+.navbar { 
+    width: 90%; /* Reduce width */
+    max-width: 1200px; /* Prevent it from being too wide on large screens */
+    margin: 0 auto; /* Center the navbar */
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Remove Sticky Position */
+  .navbar {
+    position: relative; /* No longer sticky */
+  }
+  
+  /* Logo */
+  .navbar .logo {
+    width: 250px; /* Reduce logo size */
+  }
+  
+  /* Navigation Menu */
+  .navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: #49557e;
+    font-size: 18px;
+  }
+  
+  /* Right Section */
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Reduce gap */
+  }
+  
+  .navbar button {
+    background: transparent;
+    font-size: 16px;
+    color: #49557e;
+    border: 1px solid tomato;
+    padding: 8px 25px; /* Reduce padding */
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .navbar button:hover {
+    background-color: #fff4f2;
+  }
+  
+  /* Active Menu Item */
+  .navbar .active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+  }
+  
+  /* Search Icon */
+  .navbar-search-icon {
+    position: relative;
+  }
+  
+  .navbar-search-icon .dot {
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: tomato;
+    border-radius: 5px;
+    top: -8px;
+    right: -8px;
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 1050px) {
+    .navbar {
+        width: 95%; /* Adjust width on smaller screens */
+    }
+  
+    .navbar .logo {
+        width: 175px;
+    }
+  
+    .navbar-menu {
+        gap: 15px;
+        font-size: 17px;
+    }
+  
+    .navbar-right {
+        gap: 25px;
+    }
+  
+    .navbar-right img {
+        width: 22px;
+    }
+  
+    .navbar-right button {
+        padding: 7px 20px;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .navbar .logo {
+        width: 150px;
+    }
+  
+    .navbar-menu {
+        gap: 12px;
+        font-size: 16px;
+    }
+  
+    .navbar-right {
+        gap: 20px;
+    }
+  
+    .navbar-right img {
+        width: 20px;
+    }
+  
+    .navbar-right button {
+        padding: 6px 18px;
+        font-size: 15px;
+    }
+  }
+  
+  @media (max-width: 750px) {
+    .navbar {
+        width: 100%; /* Full width for small screens */
+    }
+  
+    .navbar-menu {
+        display: none;
+    }
+  }
+  
